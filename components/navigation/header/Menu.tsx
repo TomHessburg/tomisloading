@@ -22,11 +22,14 @@ export default function Menu() {
 
   return (
     <div className="relative">
-      <GhostIconButton
-        onClick={() => setOpen((pv) => !pv)}
-        onBlur={() => setOpen(false)}
-        Icon={MdMenu}
-      />
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          className="fixed inset-0 z-20"
+        ></div>
+      )}
+      <GhostIconButton onClick={() => setOpen((pv) => !pv)} Icon={MdMenu} />
+
       <AnimatePresence>
         {open && (
           <motion.div
@@ -37,7 +40,7 @@ export default function Menu() {
             initial="exit"
             animate="enter"
             exit="exit"
-            className="absolute top-10 right-0 z-10 bg-white shadow-lg rounded-lg w-[200px] p-3"
+            className="absolute top-10 right-0 z-30 bg-white shadow-lg rounded-lg w-[200px] p-3"
           >
             <Link
               className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
