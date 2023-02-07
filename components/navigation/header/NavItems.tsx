@@ -1,9 +1,7 @@
 import BaseButton from "components/buttons/BaseButton";
-import GhostIconButton from "components/buttons/GhostIconButton";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import { MdMenu } from "react-icons/md";
 import Menu from "./Menu";
 
 export default function NavItems() {
@@ -19,14 +17,7 @@ export default function NavItems() {
       >
         Videos
       </Link>
-      <Link
-        href="/playlists"
-        className={`mr-6 text-base hidden md:block ${
-          router.pathname === "/playlists" ? "font-bold" : ""
-        }`}
-      >
-        Playlists
-      </Link>
+
       <Link
         href="/courses"
         className={`mr-6 text-base hidden md:block ${
@@ -34,6 +25,22 @@ export default function NavItems() {
         }`}
       >
         Courses
+      </Link>
+      <Link
+        href="/jobs"
+        className={`mr-6 text-base hidden md:block ${
+          router.pathname === "/jobs" ? "font-bold" : ""
+        }`}
+      >
+        Jobs
+      </Link>
+      <Link
+        href="/mentor"
+        className={`mr-6 text-base hidden md:block ${
+          router.pathname === "/mentor" ? "font-bold" : ""
+        }`}
+      >
+        Mentor
       </Link>
       <BaseButton className="mr-3 hidden md:block">Join Newsletter</BaseButton>
       <Menu />

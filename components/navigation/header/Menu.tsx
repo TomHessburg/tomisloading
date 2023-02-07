@@ -8,11 +8,12 @@ import { motion } from "framer-motion";
 import {
   MdMenu,
   MdVideoCameraFront,
-  MdList,
   MdSchool,
   MdLightbulb,
-  MdInfo,
+  MdContactMail,
   MdHandyman,
+  MdMoney,
+  MdCode,
 } from "react-icons/md";
 import BaseButton from "components/buttons/BaseButton";
 
@@ -47,17 +48,24 @@ export default function Menu() {
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
-              href="/playlists"
-            >
-              <span>Playlists</span>
-              <MdList size="22px" />
-            </Link>
-            <Link
-              className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
               href="/courses"
             >
               <span>Courses</span>
               <MdSchool size="22px" />
+            </Link>
+            <Link
+              className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
+              href="/jobs"
+            >
+              <span>Jobs</span>
+              <MdMoney size="22px" />
+            </Link>
+            <Link
+              className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
+              href="/mentor"
+            >
+              <span>Mentor</span>
+              <MdCode size="22px" />
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
@@ -75,10 +83,10 @@ export default function Menu() {
             </Link>
             <Link
               className="w-full p-2 mb-3 text-sm flex items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
-              href="/about"
+              href="/contact"
             >
-              <span>About/Links</span>
-              <MdInfo size="22px" />
+              <span>Contact/Sponsor</span>
+              <MdContactMail size="22px" />
             </Link>
             <BaseButton className="w-full">Join Newsletter</BaseButton>
           </motion.div>
