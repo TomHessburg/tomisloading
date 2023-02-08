@@ -14,7 +14,10 @@ import {
   MdHandyman,
   MdMoney,
   MdCode,
+  MdMail,
 } from "react-icons/md";
+
+import { FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 import BaseButton from "components/buttons/BaseButton";
 
 export default function Menu() {
@@ -58,10 +61,10 @@ export default function Menu() {
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
-              href="/jobs"
+              href="/newsletter"
             >
-              <span>Jobs</span>
-              <MdMoney size="22px" />
+              <span>Newsletter</span>
+              <MdMail size="22px" />
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
@@ -72,10 +75,10 @@ export default function Menu() {
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
-              href="/suggest"
+              href="/jobs"
             >
-              <span>Suggest Idea</span>
-              <MdLightbulb size="22px" />
+              <span>Jobs</span>
+              <MdMoney size="22px" />
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
@@ -85,16 +88,52 @@ export default function Menu() {
               <MdHandyman size="22px" />
             </Link>
             <Link
+              className="w-full p-2 mb-2 text-sm flex items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
+              href="/suggest"
+            >
+              <span>Suggest Idea</span>
+              <MdLightbulb size="22px" />
+            </Link>
+            <Link
               className="w-full p-2 mb-3 text-sm flex items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
               href="/contact"
             >
               <span>Contact/Sponsor</span>
               <MdContactMail size="22px" />
             </Link>
-            <BaseButton className="w-full">Join Newsletter</BaseButton>
+            <BaseButton className="w-full mb-3">Join Newsletter</BaseButton>
+            <Socials />
           </motion.div>
         )}
       </AnimatePresence>
     </div>
   );
 }
+
+const Socials = () => {
+  return (
+    <div className="flex items-end justify-around">
+      <Link
+        href="https://www.youtube.com/channel/UCQ5JhZ8pS-MXnGBsyyy88MQ"
+        target="_blank"
+        rel="nofollow"
+      >
+        <FaYoutube size="28px" />
+      </Link>
+      <Link
+        href="https://www.tiktok.com/@tomisloading"
+        target="_blank"
+        rel="nofollow"
+      >
+        <FaTiktok size="28px" />
+      </Link>
+      <Link
+        href="https://www.instagram.com/tomisloading/"
+        target="_blank"
+        rel="nofollow"
+      >
+        <FaInstagram size="28px" />
+      </Link>
+    </div>
+  );
+};

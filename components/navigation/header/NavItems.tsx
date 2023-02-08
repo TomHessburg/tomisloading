@@ -21,18 +21,18 @@ export default function NavItems() {
       <Link
         href="/courses"
         className={`mr-6 text-base hidden md:block ${
-          router.pathname === "/about" ? "font-bold" : ""
+          router.pathname === "/courses" ? "font-bold" : ""
         }`}
       >
         Courses
       </Link>
       <Link
-        href="/jobs"
+        href="/newsletter"
         className={`mr-6 text-base hidden md:block ${
-          router.pathname === "/jobs" ? "font-bold" : ""
+          router.pathname === "/newsletter" ? "font-bold" : ""
         }`}
       >
-        Jobs
+        Newsletter
       </Link>
       <Link
         href="/mentor"
