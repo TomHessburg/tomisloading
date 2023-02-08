@@ -37,9 +37,7 @@ export const SearchContextProvider = ({ children }: Props) => {
   return (
     <SearchContext.Provider
       value={{
-        results: filters.length
-          ? results.filter(({ id }) => id % (filters.length + 1) === 0)
-          : results,
+        results,
         filterResults,
         filters,
       }}

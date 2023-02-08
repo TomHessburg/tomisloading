@@ -27,14 +27,6 @@ export default function NavItems() {
         Courses
       </Link>
       <Link
-        href="/newsletter"
-        className={`mr-6 text-base hidden md:block ${
-          router.pathname === "/newsletter" ? "font-bold" : ""
-        }`}
-      >
-        Newsletter
-      </Link>
-      <Link
         href="/mentor"
         className={`mr-6 text-base hidden md:block ${
           router.pathname === "/mentor" ? "font-bold" : ""

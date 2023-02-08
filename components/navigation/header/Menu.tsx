@@ -61,13 +61,6 @@ export default function Menu() {
             </Link>
             <Link
               className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
-              href="/newsletter"
-            >
-              <span>Newsletter</span>
-              <MdMail size="22px" />
-            </Link>
-            <Link
-              className="w-full p-2 mb-2 text-sm flex md:hidden items-center justify-between transition-colors bg-white hover:bg-light rounded-lg"
               href="/mentor"
             >
               <span>Mentor</span>

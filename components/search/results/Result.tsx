@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Result = ({
-  id,
+  slug,
   url,
   title,
   langs,
@@ -28,7 +28,7 @@ export const Result = ({
       layout
       className="cursor-pointer text-white"
     >
-      <Link href={`/post/${id}`}>
+      <Link href={`/video/${slug}`}>
         <div
           className="relative z-0 overflow-hidden rounded-xl"
           onMouseEnter={() => setHovered(true)}
