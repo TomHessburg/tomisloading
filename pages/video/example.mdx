@@ -1,4 +1,5 @@
 import { CodeVidLayout } from "components/layouts/CodeVidLayout";
+import { files } from "components/codeFiles/example";
 
 export const meta = {
   author: "Tom Hessburg",
@@ -6,27 +7,12 @@ export const meta = {
 
 # Here
 
+This is some example text. This is some example text. This is some example text. This is some example text. This is some example text. This is some example text. v
+
 export default ({ children }) => (
   <CodeVidLayout
     meta={meta}
-    files={[
-      {
-        title: "index.js",
-        lang: "javascript",
-        code: `const test = 10;
-
-console.log("test");
-        `,
-    },
-    {
-        title: "styles.css",
-        lang: "css",
-        code: `.example {
-    background: black; 
-}
-        `,
-    },
-]}
+    files={files}
 
 >
 
