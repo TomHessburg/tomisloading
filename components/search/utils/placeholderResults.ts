@@ -8,6 +8,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-2",
@@ -18,6 +19,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-3",
@@ -28,6 +30,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-4",
@@ -38,6 +41,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-5",
@@ -48,6 +52,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-6",
@@ -58,6 +63,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-7",
@@ -68,6 +74,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-8",
@@ -78,6 +85,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-9",
@@ -88,6 +96,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
 
   {
@@ -99,6 +108,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-11",
@@ -109,6 +119,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-12",
@@ -119,6 +130,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-13",
@@ -129,6 +141,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-14",
@@ -139,6 +152,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-15",
@@ -149,6 +163,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-16",
@@ -159,6 +174,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-17",
@@ -169,6 +185,7 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
   {
     slug: "example-18",
@@ -179,5 +196,6 @@ export const placeholderResults = [
     langs: ["JavaScript", "HTML & CSS"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tags: ["Frontend", "Framer Motion", "Animations"],
   },
 ];

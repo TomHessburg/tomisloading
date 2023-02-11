@@ -1,15 +1,118 @@
 import { CodeVidLayout } from "components/layouts/CodeVidLayout";
 import { files } from "components/codeFiles/example";
+import { TikTokHeader } from "components/mdx/headers/TikTokHeader";
+import { PrimaryHeader } from "components/mdx/headers/PrimaryHeader";
 
 export const meta = {
-  author: "Tom Hessburg",
+  slug: "example",
+  created: "Aug 18th, 2022",
+  length: "5 mins",
+  url: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+  title: "An Example Title for a Video",
+  langs: ["JavaScript", "HTML & CSS"],
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  tags: ["Frontend", "Framer Motion", "Animations"],
 };
 
-# Here
+<TikTokHeader>
+  <blockquote
+    className="tiktok-embed"
+    cite="https://www.tiktok.com/@tomisloading/video/7198594745227136302"
+    data-video-id="7198594745227136302"
+    style={{
+      maxWidth: 605,
+      minWidth: 325,
+    }}
+  >
+    <section>
+      <a
+        target="_blank"
+        title="@tomisloading"
+        href="https://www.tiktok.com/@tomisloading?refer=embed"
+      >
+        @tomisloading
+      </a>
+      CSS first-line and first-letter styling
+      <a
+        title="coding"
+        target="_blank"
+        href="https://www.tiktok.com/tag/coding?refer=embed"
+      >
+        #coding
+      </a>
+      <a
+        title="programming"
+        target="_blank"
+        href="https://www.tiktok.com/tag/programming?refer=embed"
+      >
+        #programming
+      </a>
+      <a
+        title="html"
+        target="_blank"
+        href="https://www.tiktok.com/tag/html?refer=embed"
+      >
+        #html
+      </a>
+      <a
+        title="htmlcss"
+        target="_blank"
+        href="https://www.tiktok.com/tag/htmlcss?refer=embed"
+      >
+        #htmlcss
+      </a>
+      <a
+        title="webdeveloper"
+        target="_blank"
+        href="https://www.tiktok.com/tag/webdeveloper?refer=embed"
+      >
+        #webdeveloper
+      </a>
+      <a
+        title="javascript"
+        target="_blank"
+        href="https://www.tiktok.com/tag/javascript?refer=embed"
+      >
+        #javascript
+      </a>
+      <a
+        title="techtok"
+        target="_blank"
+        href="https://www.tiktok.com/tag/techtok?refer=embed"
+      >
+        #techtok
+      </a>
+      <a
+        title="webdev"
+        target="_blank"
+        href="https://www.tiktok.com/tag/webdev?refer=embed"
+      >
+        #webdev
+      </a>
+      <a
+        target="_blank"
+        title="♬ original sound - Tom Is Loading"
+        href="https://www.tiktok.com/music/original-sound-7198594807848045354?refer=embed"
+      >
+        ♬ original sound - Tom Is Loading
+      </a>
+    </section>
+  </blockquote>
+</TikTokHeader>
 
-This is some example text. This is some example text. This is some example text. This is some example text. This is some example text. This is some example text. v
+<PrimaryHeader meta={meta} />
+
+Lorem ipsum dolor sit amet consectetur. Eget vitae cursus arcu tristique vel nulla eu. Viverra risus sollicitudin et amet euismod velit ridiculus ut dui. Nisi interdum varius suspendisse at. Vitae luctus condimentum ac pretium vel pellentesque molestie. Vestibulum euismod egestas pretium mi nisi faucibus a venenatis. Ullamcorper aliquam fermentum malesuada morbi mollis lectus elementum nulla. Vitae nisi tellus orci sem viverra eget tortor non vitae. Cras tincidunt massa eu tellus ultricies.
+
+Massa at risus nibh ultrices. Eu metus sit porta dolor ut etiam suscipit. Mauris condimentum feugiat mi amet sed porttitor. Massa amet dignissim aliquet quam ut tellus neque felis. Consequat in curabitur pulvinar nec. Convallis cursus convallis volutpat rutrum proin nibh laoreet nunc mi. Semper fermentum volutpat nullam non pharetra. Condimentum orci libero dignissim tellus leo nec enim posuere.
+
+Auctor eget pulvinar pretium mi molestie convallis consectetur. Diam facilisis cursus at mauris est libero ut nisl. Ornare phasellus felis morbi mauris. Vitae nibh nibh vel eu cursus aliquet sodales non mattis. Neque mauris sodales ante nisl vitae velit non lectus. Sit semper libero amet pharetra amet amet.
+
+Enim magna consectetur pellentesque quam nisl nunc consequat. Pellentesque nisi id habitant vel in lorem tempus. Amet dui euismod iaculis cursus auctor maecenas quis. Elementum laoreet ut proin adipiscing habitant. Dolor blandit volutpat amet sed pretium.
 
 export default ({ children }) => (
+
   <CodeVidLayout
     meta={meta}
     files={files}
