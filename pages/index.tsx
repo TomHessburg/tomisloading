@@ -7,12 +7,16 @@ export default function Home() {
     anime({
       targets: ".img-grid-item",
       scale: [
-        { value: 0.75, easing: "easeOutSine", duration: 500 },
-        { value: 1.25, easing: "easeInOutQuad", duration: 750 },
-        { value: 1.1, easing: "easeOutSine", duration: 250 },
-        { value: 1, easing: "easeInOutQuad", duration: 750 },
+        { value: 0.5, easing: "easeOutSine", duration: 750 },
+        { value: 0.5, easing: "easeOutSine", duration: 750 },
+        { value: 1, easing: "easeInOutQuad", duration: 500 },
       ],
-      delay: anime.stagger(250, { grid: [4, 4], from: "first" }),
+      opacity: [
+        { value: 0, easing: "easeOutSine", duration: 750 },
+        { value: 0, easing: "easeOutSine", duration: 750 },
+        { value: 1, easing: "easeInOutQuad", duration: 500 },
+      ],
+      delay: anime.stagger(250, { grid: [6, 6], from: "first" }),
       loop: true,
     });
   }, []);
@@ -46,7 +50,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full max-w-xs lg:max-w-md aspect-square grid grid-cols-4 gap-1">
+          <div className="w-full max-w-xs lg:max-w-md aspect-square grid grid-cols-6 gap-[1px]">
             <img
               src="hero-img/row-1-column-1.jpg"
               className="w-full h-auto img-grid-item"
@@ -61,6 +65,14 @@ export default function Home() {
             />
             <img
               src="hero-img/row-1-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-1-column-5.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-1-column-6.jpg"
               className="w-full h-auto img-grid-item"
             />
 
@@ -80,6 +92,14 @@ export default function Home() {
               src="hero-img/row-2-column-4.jpg"
               className="w-full h-auto img-grid-item"
             />
+            <img
+              src="hero-img/row-2-column-5.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-2-column-6.jpg"
+              className="w-full h-auto img-grid-item"
+            />
 
             <img
               src="hero-img/row-3-column-1.jpg"
@@ -97,6 +117,14 @@ export default function Home() {
               src="hero-img/row-3-column-4.jpg"
               className="w-full h-auto img-grid-item"
             />
+            <img
+              src="hero-img/row-3-column-5.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-3-column-6.jpg"
+              className="w-full h-auto img-grid-item"
+            />
 
             <img
               src="hero-img/row-4-column-1.jpg"
@@ -112,6 +140,64 @@ export default function Home() {
             />
             <img
               src="hero-img/row-4-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-4-column-5.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-4-column-6.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+
+            <img
+              src="hero-img/row-5-column-1.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-5-column-2.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-5-column-3.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-5-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-5-column-5.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-5-column-6.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+
+            <img
+              src="hero-img/row-6-column-1.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-6-column-2.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-6-column-3.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-6-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-6-column-5.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-6-column-6.jpg"
               className="w-full h-auto img-grid-item"
             />
           </div>
