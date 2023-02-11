@@ -34,7 +34,7 @@ const Files = ({ files }: { files: File[] }) => {
   const [selected, setSelected] = useState(files[0]);
 
   return (
-    <aside className="w-full m-0 lg:m-4 ml-0 max-w-full lg:max-w-[575px] lg:w-[575px] shrink-0 selection:bg-brand bg-[#292E3E] overflow-scroll sticky z-0 shadow-xl shadow-black/20 top-[calc(65px_+_16px)] h-[calc(100vh_-_65px)] lg:h-[calc(100vh_-_65px_-_32px)] rounded-none lg:rounded-lg">
+    <aside className="w-full m-0 lg:m-4 ml-0 max-w-full lg:max-w-[575px] lg:w-[575px] shrink-0 selection:bg-brand bg-[#292E3E] overflow-scroll no-scrollbar sticky z-0 shadow-xl shadow-black/20 top-[calc(65px_+_16px)] h-[calc(100vh_-_65px)] lg:h-[calc(100vh_-_65px_-_32px)] rounded-none lg:rounded-lg">
       <div className="text-white sticky top-0 left-0 z-10 p-3 bg-[#3b425a]">
         {files.map((file) => (
           <span

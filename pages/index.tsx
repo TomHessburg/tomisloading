@@ -1,6 +1,21 @@
 import Head from "next/head";
+import anime from "animejs";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    anime({
+      targets: ".img-grid-item",
+      scale: [
+        { value: 0.75, easing: "easeOutSine", duration: 500 },
+        { value: 1.25, easing: "easeInOutQuad", duration: 750 },
+        { value: 1.1, easing: "easeOutSine", duration: 250 },
+        { value: 1, easing: "easeInOutQuad", duration: 750 },
+      ],
+      delay: anime.stagger(250, { grid: [4, 4], from: "first" }),
+      loop: true,
+    });
+  }, []);
   return (
     <>
       <Head>
@@ -9,6 +24,99 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <main>
+        <div className="p-4 sm:p-12 flex flex-col lg:flex-row items-center justify-evenly gap-8 lg:gap-24">
+          <div>
+            <span className="block bg-brand text-white font-bold p-2 w-fit rounded-lg shadow -rotate-6 -ml-4 mb-2">
+              By @TomIsLoading
+            </span>
+
+            <h1 className="text-6xl sm:text-8xl mb-4">
+              Welcome
+              <br />
+              to <span className="font-bold">Blast</span>{" "}
+              <span className="inline-block wave">👋</span>
+            </h1>
+
+            <div className="text-xl sm:text-xl font-light flex flex-col gap-1">
+              <span>To-the-point web dev tutorials.</span>
+              <span>Weekly frontend newsletter.</span>
+              <span>Entry level dev jobs.</span>
+              <span>Mentorship.</span>
+            </div>
+          </div>
+
+          <div className="w-full max-w-xs lg:max-w-md aspect-square grid grid-cols-4 gap-1">
+            <img
+              src="hero-img/row-1-column-1.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-1-column-2.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-1-column-3.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-1-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+
+            <img
+              src="hero-img/row-2-column-1.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-2-column-2.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-2-column-3.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-2-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+
+            <img
+              src="hero-img/row-3-column-1.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-3-column-2.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-3-column-3.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-3-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+
+            <img
+              src="hero-img/row-4-column-1.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-4-column-2.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-4-column-3.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+            <img
+              src="hero-img/row-4-column-4.jpg"
+              className="w-full h-auto img-grid-item"
+            />
+          </div>
+        </div>
+      </main>
     </>
   );
 }
