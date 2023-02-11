@@ -6,7 +6,7 @@ export const files = [
     const [selected, setSelected] = useState(files[0]);
     
     return (
-        <aside className="hidden lg:block max-w-[600px] w-[600px] shrink-0 m-4 rounded-lg selection:bg-brand bg-[#292E3E] overflow-scroll sticky z-0 shadow top-[81px] h-[calc(100vh_-_65px_-_32px)]">
+        <aside className="hidden lg:block max-w-[600px] w-[600px]">
             <div className="text-white sticky top-0 left-0 z-10 p-3 bg-[#3b425a]">
                 {files.map((file) => (
                 <span
@@ -34,5 +34,12 @@ export const files = [
   background: black; 
 }
       `,
+  },
+  {
+    title: "index.html",
+    lang: "markup",
+    code: `<div>
+    <h1>Hey pal</h1>
+</div>`,
   },
 ];
