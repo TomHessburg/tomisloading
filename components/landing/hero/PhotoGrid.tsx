@@ -7,12 +7,12 @@ export default function PhotoGrid() {
     anime({
       targets: ".img-grid-item",
       scale: [
-        { value: 0.5, easing: "easeOutSine", duration: 750 },
-        // { value: 0.5, easing: "easeOutSine", duration: 750 },
+        { value: 0.75, easing: "easeOutSine", duration: 750 },
+        { value: 0.75, easing: "easeOutSine", duration: 750 },
         { value: 1, easing: "easeInOutQuad", duration: 500 },
       ],
       opacity: [
-        { value: 0, easing: "easeOutSine", duration: 750 },
+        { value: 1, easing: "easeOutSine", duration: 750 },
         { value: 0, easing: "easeOutSine", duration: 750 },
         { value: 1, easing: "easeInOutQuad", duration: 500 },
       ],
@@ -22,155 +22,155 @@ export default function PhotoGrid() {
   }, []);
 
   return (
-    <div className="grid w-full min-w-[500px] aspect-square grid-cols-6 gap-1">
+    <div className="grid w-full scale-150 min-w-[500px] aspect-square grid-cols-6 gap-1">
       <img
-        src="hero-img/row-1-column-1.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-1-column-1.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-1-column-2.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-1-column-2.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-1-column-3.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-1-column-3.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-1-column-4.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-1-column-4.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-1-column-5.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-1-column-5.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-1-column-6.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-
-      <img
-        src="hero-img/row-2-column-1.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-2-column-2.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-2-column-3.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-2-column-4.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-2-column-5.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-2-column-6.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-1-column-6.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
 
       <img
-        src="hero-img/row-3-column-1.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-2-column-1.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-3-column-2.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-2-column-2.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-3-column-3.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-2-column-3.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-3-column-4.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-2-column-4.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-3-column-5.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-2-column-5.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-3-column-6.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-
-      <img
-        src="hero-img/row-4-column-1.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-4-column-2.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-4-column-3.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-4-column-4.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-4-column-5.jpg"
-        className="w-full h-auto img-grid-item bg-black"
-      />
-      <img
-        src="hero-img/row-4-column-6.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-2-column-6.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
 
       <img
-        src="hero-img/row-5-column-1.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-3-column-1.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-5-column-2.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-3-column-2.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-5-column-3.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-3-column-3.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-5-column-4.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-3-column-4.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-5-column-5.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-3-column-5.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-5-column-6.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-3-column-6.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
 
       <img
-        src="hero-img/row-6-column-1.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-4-column-1.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-6-column-2.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-4-column-2.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-6-column-3.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-4-column-3.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-6-column-4.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-4-column-4.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-6-column-5.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-4-column-5.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
       <img
-        src="hero-img/row-6-column-6.jpg"
-        className="w-full h-auto img-grid-item bg-black"
+        src="hero-img/row-4-column-6.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+
+      <img
+        src="hero-img/row-5-column-1.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-5-column-2.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-5-column-3.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-5-column-4.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-5-column-5.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-5-column-6.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+
+      <img
+        src="hero-img/row-6-column-1.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-6-column-2.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-6-column-3.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-6-column-4.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-6-column-5.webp"
+        className="w-full h-auto img-grid-item bg-brand"
+      />
+      <img
+        src="hero-img/row-6-column-6.webp"
+        className="w-full h-auto img-grid-item bg-brand"
       />
     </div>
   );
