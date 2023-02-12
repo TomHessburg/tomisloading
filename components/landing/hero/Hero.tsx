@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="flex flex-col sm:flex-row items-center justify-evenly gap-4 sm:gap-12 overflow-hidden">
       <HeroCopy />
-      <div className="hidden sm:flex items-center justify-center w-2/5 h-[600px] overflow-hidden bg-light relative">
+      <div className="hidden m-6 ml-0 rounded-lg sm:flex items-center justify-center w-2/5 min-h-[600px] overflow-hidden relative">
         <PhotoGrid />
         <TILLoader />
       </div>
