@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <div className="w-full h-screen bg-light"></div>
+        <div className="w-full h-screen bg-black"></div>
       </main>
     </>
   );

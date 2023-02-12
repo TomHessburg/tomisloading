@@ -12,7 +12,7 @@ module.exports = {
         border: "#DDDDDD",
         unfocused: "#767676",
         input: "#F1F1F1",
-        light: "#F1F1F1",
+        light: "#F7F7F7",
         "brand-red": "#D74C4C",
       },
     },

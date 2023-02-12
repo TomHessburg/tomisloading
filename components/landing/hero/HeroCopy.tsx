@@ -1,23 +1,51 @@
 import BaseButton from "components/buttons/BaseButton";
 import React from "react";
 import EmailInput from "./EmailInput";
+import anime from "animejs";
+import { useEffect } from "react";
 
 export default function HeroCopy() {
+  useEffect(() => {
+    anime({
+      targets: ".translate-item",
+      translateY: [
+        { value: 100, easing: "easeInOutQuad", duration: 0 },
+        { value: 0, easing: "easeInOutQuad", duration: 500 },
+      ],
+      opacity: [
+        { value: 0, easing: "easeInOutQuad", duration: 0 },
+        { value: 0, easing: "easeInOutQuad", duration: 250 },
+        { value: 1, easing: "easeInOutQuad", duration: 500 },
+      ],
+      delay: anime.stagger(100, { from: "first" }),
+    });
+  }, []);
+
   return (
-    <div className="w-full sm:w-2/3 p-8">
+    <div className="w-full lg:w-3/5 p-8">
       <div className="max-w-xl mx-auto">
-        <span className="block bg-gradient-to-r from-brand to-accent text-white font-bold p-2 w-fit rounded-lg shadow sm:mb-4 sm:ml-0 mb-2 mx-auto text-sm">
-          By @TomIsLoading
-        </span>
+        <div className="overflow-hidden">
+          <span className="translate-item translate-y-[100px] block bg-gradient-to-r from-brand to-accent text-white font-bold p-2 w-fit rounded-lg shadow sm:mb-4 sm:ml-0 mb-2 mx-auto text-sm">
+            By @TomIsLoading
+          </span>
+        </div>
 
         <h1 className="text-5xl sm:text-7xl max-w-xl mb-4 text-center sm:text-start">
-          To-the-point
+          <span className="overflow-hidden inline-block">
+            <span className="inline-block translate-item translate-y-[100px]">
+              To-the-point
+            </span>
+          </span>
           <br />
-          <span className="font-bold">web dev stuff</span>
+          <span className="overflow-hidden inline-block">
+            <span className="font-bold inline-block translate-item translate-y-[100px]">
+              web dev stuff
+            </span>
+          </span>
         </h1>
 
-        <div className="max-w-xl font-light flex flex-col gap-1 text-center sm:text-start">
-          <span className="mb-2">
+        <div className="max-w-xl font-light flex flex-col gap-1 text-center sm:text-start overflow-hidden">
+          <span className="mb-2 inline-block translate-item translate-y-[100px]">
             Hey, I'm Tom <span className="inline-block wave">👋</span> I write
             code and talk about it 💻. I have a newsletter called Frontend
             Fridays. Every week I send out tips, tools & jobs from early career
@@ -25,9 +53,11 @@ export default function HeroCopy() {
           </span>
         </div>
 
-        <div className="mt-4 flex items-center gap-2">
-          <EmailInput />
-          <BaseButton>Join Newsletter</BaseButton>
+        <div className="overflow-hidden">
+          <div className="mt-4 flex items-center gap-2 translate-item translate-y-[100px]">
+            <EmailInput />
+            <BaseButton>Join Newsletter</BaseButton>
+          </div>
         </div>
       </div>
     </div>
