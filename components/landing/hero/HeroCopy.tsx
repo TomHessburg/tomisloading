@@ -13,10 +13,10 @@ export default function HeroCopy() {
         <h1 className="text-5xl sm:text-7xl max-w-xl mb-4 text-center sm:text-start">
           To-the-point
           <br />
-          <span className="font-bold">web dev tutorials</span>
+          <span className="font-bold">web dev stuff</span>
         </h1>
 
-        <div className="text-lg max-w-xl font-light flex flex-col gap-1 text-center sm:text-start">
+        <div className="max-w-xl font-light flex flex-col gap-1 text-center sm:text-start">
           <span className="mb-2">
             Hey, I'm Tom <span className="inline-block wave">👋</span> I write
             code and talk about it 💻. I have a newsletter called Frontend

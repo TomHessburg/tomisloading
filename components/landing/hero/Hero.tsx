@@ -8,7 +8,6 @@ export default function Hero() {
       <HeroCopy />
       <div className="hidden sm:flex items-center justify-center w-1/3 h-[550px] overflow-hidden relative">
         <PhotoGrid />
-        {/* <TILLoader /> */}
       </div>
     </div>
   );
