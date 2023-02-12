@@ -16,13 +16,13 @@ export default function PhotoGrid() {
         { value: 0, easing: "easeOutSine", duration: 750 },
         { value: 1, easing: "easeInOutQuad", duration: 500 },
       ],
-      delay: anime.stagger(250, { grid: [6, 6], from: 12 }),
+      delay: anime.stagger(250, { grid: [6, 6], from: "first" }),
       loop: true,
     });
   }, []);
 
   return (
-    <div className="grid w-full scale-150 min-w-[500px] aspect-square grid-cols-6 gap-[2px]">
+    <div className="grid w-full scale-125 min-w-[500px] aspect-square grid-cols-6 gap-[2px]">
       <img
         src="hero-img/row-1-column-1.webp"
         className="w-full h-auto img-grid-item bg-brand"

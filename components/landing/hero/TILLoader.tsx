@@ -16,8 +16,8 @@ export default function TILLoader() {
   }, []);
 
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center">
-      <span className="text-lg mt-4 text-white font-bold grid gap-1 grid-cols-4">
+    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black z-20">
+      <span className="text-lg mt-4 text-white font-light uppercase grid gap-1 grid-cols-4">
         <span className="period-load w-8 aspect-square grid place-items-center">
           @
         </span>
