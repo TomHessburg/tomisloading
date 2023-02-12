@@ -1,4 +1,6 @@
+import BaseButton from "components/buttons/BaseButton";
 import React from "react";
+import EmailInput from "./EmailInput";
 
 export default function HeroCopy() {
   return (
@@ -21,6 +23,11 @@ export default function HeroCopy() {
             Fridays. Every week I send out tips, tools & jobs from early career
             web devs. It's free ❤️
           </span>
+        </div>
+
+        <div className="mt-4 flex items-center gap-2">
+          <EmailInput />
+          <BaseButton>Join Newsletter</BaseButton>
         </div>
       </div>
     </div>
