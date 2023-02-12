@@ -16,161 +16,161 @@ export default function PhotoGrid() {
         { value: 0, easing: "easeOutSine", duration: 750 },
         { value: 1, easing: "easeInOutQuad", duration: 500 },
       ],
-      delay: anime.stagger(250, { grid: [6, 6], from: "first" }),
+      delay: anime.stagger(250, { grid: [6, 6], from: 12 }),
       loop: true,
     });
   }, []);
 
   return (
-    <div className="grid w-full aspect-square grid-cols-6 gap-1">
+    <div className="grid w-full min-w-[500px] aspect-square grid-cols-6 gap-1">
       <img
         src="hero-img/row-1-column-1.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-1-column-2.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-1-column-3.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-1-column-4.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-1-column-5.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-1-column-6.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
 
       <img
         src="hero-img/row-2-column-1.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-2-column-2.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-2-column-3.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-2-column-4.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-2-column-5.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-2-column-6.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
 
       <img
         src="hero-img/row-3-column-1.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-3-column-2.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-3-column-3.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-3-column-4.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-3-column-5.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-3-column-6.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
 
       <img
         src="hero-img/row-4-column-1.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-4-column-2.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-4-column-3.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-4-column-4.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-4-column-5.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-4-column-6.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
 
       <img
         src="hero-img/row-5-column-1.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-5-column-2.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-5-column-3.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-5-column-4.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-5-column-5.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-5-column-6.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
 
       <img
         src="hero-img/row-6-column-1.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-6-column-2.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-6-column-3.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-6-column-4.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-6-column-5.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
       <img
         src="hero-img/row-6-column-6.jpg"
-        className="w-full h-auto img-grid-item"
+        className="w-full h-auto img-grid-item bg-black"
       />
     </div>
   );

@@ -4,7 +4,7 @@ export default function HeroCopy() {
   return (
     <div className="w-full sm:w-2/3 p-8">
       <div className="max-w-xl mx-auto">
-        <span className="block bg-gradient-to-r from-brand to-accent text-white font-bold p-2 w-fit rounded-lg shadow sm:-rotate-6 sm:-ml-4 mb-2 mx-auto text-sm">
+        <span className="block bg-gradient-to-r from-brand to-accent text-white font-bold p-2 w-fit rounded-lg shadow sm:mb-4 sm:ml-0 mb-2 mx-auto text-sm">
           By @TomIsLoading
         </span>
 
