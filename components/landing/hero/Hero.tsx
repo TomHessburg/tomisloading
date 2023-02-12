@@ -4,10 +4,11 @@ import PhotoGrid from "./PhotoGrid";
 
 export default function Hero() {
   return (
-    <div className="p-8 flex flex-col-reverse sm:flex-row items-center justify-evenly gap-4 sm:gap-12">
+    <div className="flex flex-col sm:flex-row items-center justify-evenly gap-4 sm:gap-12 overflow-hidden">
       <HeroCopy />
-
-      <PhotoGrid />
+      <div className="hidden sm:flex items-center justify-center w-1/3 h-[600px] overflow-hidden scale-150">
+        <PhotoGrid />
+      </div>
     </div>
   );
 }
