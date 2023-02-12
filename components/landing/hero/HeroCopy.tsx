@@ -2,23 +2,24 @@ import React from "react";
 
 export default function HeroCopy() {
   return (
-    <div className="w-full lg:w-fit">
-      <span className="block bg-brand text-white font-bold p-2 w-fit rounded-lg shadow -rotate-6 -ml-4 mb-2">
+    <div className="w-full sm:w-fit">
+      <span className="block bg-gradient-to-r from-brand to-accent text-white font-bold p-2 w-fit rounded-lg shadow sm:-rotate-6 sm:-ml-4 mb-2 mx-auto text-sm">
         By @TomIsLoading
       </span>
 
-      <h1 className="text-6xl sm:text-8xl mb-4">
-        Welcome
+      <h1 className="text-5xl sm:text-7xl max-w-xl mb-4 text-center sm:text-start">
+        To-the-point
         <br />
-        to <span className="font-bold">Blast</span>{" "}
-        <span className="inline-block wave">👋</span>
+        <span className="font-bold">web dev tutorials</span>
       </h1>
 
-      <div className="text-xl sm:text-xl font-light flex flex-col gap-1">
-        <span>To-the-point web dev tutorials.</span>
-        <span>Weekly frontend newsletter.</span>
-        <span>Entry level dev jobs.</span>
-        <span>Mentorship.</span>
+      <div className="text-lg max-w-xl font-light flex flex-col gap-1 text-center sm:text-start">
+        <span className="mb-2">
+          Hey, I'm Tom <span className="inline-block wave">👋</span> I write
+          code and talk about it 💻. I have a newsletter called Frontend
+          Fridays. Every week I send out tips, tools & jobs from early career
+          web devs. It's free ❤️
+        </span>
       </div>
     </div>
   );

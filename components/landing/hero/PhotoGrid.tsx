@@ -22,7 +22,7 @@ export default function PhotoGrid() {
   }, []);
 
   return (
-    <div className="hidden md:grid w-full max-w-md aspect-square grid-cols-6 gap-[1px]">
+    <div className="grid w-[75px] sm:w-full max-w-md aspect-square grid-cols-6 gap-[1px]">
       <img
         src="hero-img/row-1-column-1.jpg"
         className="w-full h-auto img-grid-item"
