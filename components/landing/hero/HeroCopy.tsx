@@ -38,7 +38,7 @@ export default function HeroCopy() {
           </span>
           <br />
           <span className="overflow-hidden inline-block">
-            <span className="font-bold inline-block translate-item translate-y-[100px]">
+            <span className="font-black inline-block translate-item translate-y-[100px]">
               web dev stuff
             </span>
           </span>
@@ -47,17 +47,25 @@ export default function HeroCopy() {
         <div className="max-w-xl font-light flex flex-col gap-1 text-center sm:text-start overflow-hidden">
           <span className="mb-2 inline-block translate-item translate-y-[100px]">
             Hey, I'm Tom <span className="inline-block wave">👋</span> I write
-            code and talk about it 💻. I have a newsletter called Frontend
-            Fridays. Every week I send out tips, tools & jobs from early career
-            web devs. It's free ❤️
+            code and talk about it 💻. I have a newsletter called{" "}
+            <span className="font-semibold">Frontend Fridays</span>. Every week
+            I send out <span className="font-semibold">tips, tools & jobs</span>{" "}
+            for early career web devs.{" "}
+            <span className="font-semibold">It's free</span> ❤️
           </span>
         </div>
 
         <div className="overflow-hidden">
-          <div className="mt-4 flex items-center gap-2 translate-item translate-y-[100px]">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Test");
+            }}
+            className="mt-4 flex items-center gap-2 translate-item translate-y-[100px]"
+          >
             <EmailInput />
             <BaseButton>Join Newsletter</BaseButton>
-          </div>
+          </form>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ export default function Results({
   setIsSidebarOpen,
 }: Props) {
   return (
-    <div className="w-full overflow-x-hidden">
+    <main className="w-full overflow-x-hidden">
       <Heading
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
@@ -24,6 +24,6 @@ export default function Results({
         setIsMobileFiltersOpen={setIsMobileFiltersOpen}
       />
       <List />
-    </div>
+    </main>
   );
 }
