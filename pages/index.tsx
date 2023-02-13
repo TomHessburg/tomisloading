@@ -1,4 +1,5 @@
 import Hero from "components/landing/hero/Hero";
+import Vids from "components/landing/vids/Vids";
 import Head from "next/head";
 
 export default function Home() {
@@ -15,18 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section className="w-full p-4 py-24 lg:py-36 max-w-7xl mx-auto">
-          {/* TODO: Add code snippet thing */}
-          <h2 className="font-bold text-4xl lg:text-6xl p-2 px-4 w-fit">
-            Videos &<br />
-            Source Code
-          </h2>
-          <p className="max-w-sm lg:max-w-lg mt-4 lg:text-lg ml-4 lg:ml-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            sequi blanditiis dolor rem mollitia eaque libero repellendus
-            voluptatum voluptatibus impedit?
-          </p>
-        </section>
+        <Vids />
         <section className="min-h-[300vh] bg-black"></section>
       </main>
     </>
