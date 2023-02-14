@@ -1,18 +1,24 @@
 import BaseButton from "components/buttons/BaseButton";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import anime from "animejs";
-import { useInView } from "framer-motion";
+import {
+  useInView,
+  motion,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 import { MdCode } from "react-icons/md";
+import { Code } from "components/code/Code";
 
 export default function Vids() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "-200px", once: true });
+  const copyRef = useRef(null);
+  const isInView = useInView(copyRef, { margin: "-200px", once: true });
 
   useEffect(() => {
-    isInView && triggerAnim();
+    isInView && triggerEnterAnim();
   }, [isInView]);
 
-  const triggerAnim = () => {
+  const triggerEnterAnim = () => {
     anime({
       targets: ".vids-copy",
       translateY: [
@@ -29,11 +35,48 @@ export default function Vids() {
   };
 
   return (
-    <section className="w-full px-4 lg:px-12 py-12 lg:py-36 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      {/* TODO: Add code snippet thing */}
-      <div className="w-full h-[100vh]"></div>
+    <section className="w-full px-4 lg:px-12 py-24 lg:py-36 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 overflow-hidden">
+      <div className="relative w-full md:w-1/2">
+        <img
+          src="sm-code-gif.gif"
+          alt="An example code tutorial video"
+          className="bg-black w-[120px] md:w-[150px] h-auto absolute -top-12 -right-4 shadow-lg rounded-md rotate-3"
+        />
 
-      <div ref={ref} className="h-fit relative md:sticky md:top-[150px]">
+        <div className="bg-[#292E3E] overflow-hidden max-h-[300px] md:max-h-[450px] rounded-lg p-2">
+          <Code
+            lang="css"
+            code={`
+.content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 5em 3em;
+    position: relative;
+    display: grid;
+    align-content: center;
+
+    transition: transform 1s;
+
+    transform-style: preserve-3d;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    inset: 0;
+    border: 3px solid white;
+
+    transform: translateZ(2rem);
+}
+
+        `}
+          />
+        </div>
+      </div>
+
+      <div ref={copyRef} className="h-fit relative w-full md:w-1/2">
         <h2 className="font-bold text-5xl md:text-6xl">
           <span className="overflow-hidden inline-block">
             <span className="inline-block vids-copy translate-y-[100px]">
