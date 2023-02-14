@@ -13,6 +13,7 @@ export const Code = ({ code, lang }: { code: string; lang: string }) => {
                 style={{ userSelect: "none" }}
                 className="table-cell text-right pr-4 opacity-50"
               >
+                {i + 1 < 10 ? " " : ""}
                 {i + 1}
               </span>
               <div className="table-cell">
