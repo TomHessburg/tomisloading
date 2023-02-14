@@ -44,7 +44,7 @@ export default function HeroCopy() {
           </span>
         </h1>
 
-        <div className="max-w-xl font-light flex flex-col gap-1 text-center sm:text-start overflow-hidden">
+        <div className="max-w-xl flex flex-col gap-1 text-center sm:text-start overflow-hidden">
           <span className="mb-2 inline-block hero-copy translate-y-[100px]">
             Hey, I'm Tom <span className="inline-block wave">👋</span> I write
             code and talk about it 💻. I have a newsletter called{" "}

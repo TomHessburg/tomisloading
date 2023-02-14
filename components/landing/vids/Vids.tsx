@@ -79,22 +79,23 @@ export default function Vids() {
         <h2 className="font-bold text-5xl md:text-6xl">
           <span className="overflow-hidden inline-block">
             <span className="inline-block vids-copy translate-y-[100px]">
-              Videos &
+              Learn how
             </span>
           </span>
           <br />
           <span className="overflow-hidden inline-block">
             <span className="inline-block vids-copy translate-y-[100px]">
-              Source Code
+              it's done
             </span>
           </span>
         </h2>
         <p className="md:max-w-sm lg:max-w-lg my-4 lg:text-lg">
           <span className="overflow-hidden inline-block">
             <span className="inline-block vids-copy translate-y-[100px]">
-              You can find just about everything from my TikTok, YouTube, and
-              Instagram here, complete with in depth write-up's and full source
-              code.
+              I make the web dev tutorials you didn't know you needed (
+              <i>and probably the ones you don't</i>). They're quick and to the
+              point. All of the source code -{" "}
+              <span className="font-semibold">copy/paste ready</span> 🤏👀
             </span>
           </span>
         </p>
@@ -113,8 +114,7 @@ export default function Vids() {
   );
 }
 
-const codeBlock = `
-.content {
+const codeBlock = `.content {
     text-align: center;
     background: rgba(255, 255, 255, 0.25);
     color: white;

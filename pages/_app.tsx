@@ -17,7 +17,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <MDXProvider components={MDXComponents}>
       <SearchContextProvider>
-        <main className={poppins.className + " font-normal"}>
+        <main
+          className={
+            poppins.className +
+            " font-normal selection:bg-brand selection:text-white"
+          }
+        >
           <Header />
           <Component {...pageProps} />
         </main>
