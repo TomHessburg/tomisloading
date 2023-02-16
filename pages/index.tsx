@@ -1,4 +1,5 @@
 import Hero from "components/landing/hero/Hero";
+import Mentor from "components/landing/mentor/Mentor";
 import Vids from "components/landing/vids/Vids";
 import Head from "next/head";
 
@@ -17,7 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <Vids />
-        <section className="min-h-[300vh] bg-black"></section>
+        <Mentor />
       </main>
     </>
   );

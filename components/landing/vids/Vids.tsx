@@ -62,7 +62,7 @@ export default function Vids() {
   };
 
   return (
-    <section className="w-full px-4 lg:px-12 py-24 lg:py-36 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 overflow-hidden">
+    <section className="w-full px-4 lg:px-12 py-12 pt-24 lg:py-24 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 overflow-hidden">
       <div className="relative w-full md:w-1/2">
         <img
           src="sm-code-gif.gif"
